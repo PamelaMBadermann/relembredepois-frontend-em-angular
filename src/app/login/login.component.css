@@ -1,0 +1,33 @@
+
+
+.left-side,
+.right-side {
+  width: 100%;
+}
+
+.left-side-logo {
+  max-height: 40vh;
+}
+
+.right-side-logo {
+  display: none;
+}
+
+.background-off {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 960px) {
+  .left-side, .left-side-logo {
+    display: none;
+  }
+
+  .right-side-logo {
+    display: flex;
+    max-height: 40vh;
+  }
+
+  .img-icon {
+    max-height: 20vh;
+  }
+}

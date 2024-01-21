@@ -1,48 +1,22 @@
-<style>
-  .full-view {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .left-side,
-  .right-side {
-    width: 100%;
-  }
-
-  .margin-card {
-    margin: 2vw;
-  }
-
-  @media screen and (max-width: 960px) {
-    .left-side {
-      display: none;
-    }
-
-  }
-</style>
-
-<main class="flex flex-row justify-center items-center full-view">
-  <div cols="6" col-sm="0" class="flex justify-center items-center left-side">
-    <div>esquerdo</div>
+<main class="flex flex-row justify-center items-center w-full	full-view">
+  <div cols="6" class="flex flex-col justify-center items-center left-side">
+    <img src="../../assets/relembre-depois-logo.png" class="left-side-logo">
   </div>
-  <div cols="6" cols-sm="12" class="flex flex-col justify-center items-center right-side">
-    <form>
-      <div cols-sm="9" class="flex flex-col justify-center items-center margin-card">
-        <div class="margin-card">
-          <mat-label>Já possui cadastro?</mat-label>
-        </div>
-        <div class="margin-card">
-          <mat-label>Acesse:</mat-label>
-        </div>
-        <mat-form-field class="example-full-width">
-          <mat-label>Username</mat-label>
-          <textarea matInput placeholder="Escreva o seu username"></textarea>
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <mat-label>Senha</mat-label>
-          <textarea matInput placeholder="Escreva sua senha"></textarea>
-        </mat-form-field>
+  <div cols="6" cols-sm="12" class="flex flex-col justify-center items-start  min-h-screen right-side">
+    <form class="margin-card">
+      <div class=" flex flex-col justify-center items-center w-full min-w-full">
+        <img src="../../assets/relembre-depois-logo.png" class="right-side-logo">
+        <h2 mat-h2 class="w-full m-3.5 text-center">Já possui cadastro? Acesse:</h2>
       </div>
+      <mat-form-field class="w-full min-w-full">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Escreva o seu username">
+      </mat-form-field>
+      <mat-form-field class="w-full min-w-full">
+        <mat-label>Senha</mat-label>
+        <input type="password" matInput placeholder="Escreva sua senha">
+      </mat-form-field>
+      <button appMaterialElevation mat-raised-button color="primary" class="w-full min-w-full min-h-12">Logar</button>
     </form>
   </div>
 </main>
